@@ -13,22 +13,22 @@ print("Outras posições")
 posicao = input()
 
 match posicao:
-    case Goleiro:
+    case "Goleiro":
         print("Defesa!")
-    case Zagueiro:
+    case "Zagueiro":
         print("Defesa")
-    case Lateral:
+    case "Lateral":
         print("Defesa")
-    case Volante:
+    case "Volante":
         print("Meio-campo!")
-    case Meia:
+    case "Meia":
         print("Meio-campo!")
-    case Ponta:
+    case "Ponta":
         print("Ataque!")
-    case Atacante:
+    case "Atacante":
         print("Ataque!")
-    case Centroavante:
+    case "Centroavante":
         print("Teimoso")
-    case Outras posições:
+    case "Outras posições":
         print("Teimoso")
     

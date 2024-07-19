@@ -1,0 +1,5 @@
+4 - Construa um programa onde o usuário digitará as funções que ele exerce em um jogo de futebol; se a resposta for "goleiro", "zagueiro" ou "lateral", exibir a mensagem:"Defesa!"; se a resposta for "volante" ou "meia", exibir a mensagem "Meio-campo!"; caso a resposta seja "ponta", "atacante" ou "centro-avante", exibir a mensagem "Ataque"; para qualquer outra repost, exibir a mensagem "Teimoso!".
+
+5 - Escreva um algoritmo para criar um sistema de avaliiação de serviços prestados para 5 notas diferentes, informando os respectivos valores: "1 - péssimo", "2 - ruim", "3 - rzoável", "4 - bom", "5 - ótimo", porém estas avliações só poderão ser feitas se os serviços em questão foram realmente prestados e atendendo a todos os requisitos; caso contrário, o usuário deverá digitar "0 - não executado", para que o sistema lhe possibilite descrever suas reclamações.
+
+6 - Crie um programa para realizar o jogo do pedra papel e tesoura, onde o usuário digitará "W - para papel", "O - para pedra" e "X - para tesoura".
