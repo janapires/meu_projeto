@@ -1,0 +1,139 @@
+Claro! Aqui está um exemplo de um conversor de temperatura em Python que converte entre Celsius, Fahrenheit e Kelvin. O usuário pode inserir a temperatura e escolher a unidade de entrada.
+
+python
+
+def celsius_to_fahrenheit(c):
+    return (c * 9/5) + 32
+
+def celsius_to_kelvin(c):
+    return c + 273.15
+
+def fahrenheit_to_celsius(f):
+    return (f - 32) * 5/9
+
+def fahrenheit_to_kelvin(f):
+    return (f - 32) * 5/9 + 273.15
+
+def kelvin_to_celsius(k):
+    return k - 273.15
+
+def kelvin_to_fahrenheit(k):
+    return (k - 273.15) * 9/5 + 32
+
+def converter_temperatura():
+    print("Conversor de Temperatura")
+    print("Escolha a unidade da temperatura que você deseja converter:")
+    print("1. Celsius")
+    print("2. Fahrenheit")
+    print("3. Kelvin")
+    
+    opcao = int(input("Digite o número da opção (1/2/3): "))
+    temperatura = float(input("Digite a temperatura: "))
+    
+    if opcao == 1:  # Celsius
+        fahrenheit = celsius_to_fahrenheit(temperatura)
+        kelvin = celsius_to_kelvin(temperatura)
+        print(f"{temperatura}°C é igual a {fahrenheit}°F e {kelvin}K")
+    
+    elif opcao == 2:  # Fahrenheit
+        celsius = fahrenheit_to_celsius(temperatura)
+        kelvin = fahrenheit_to_kelvin(temperatura)
+        print(f"{temperatura}°F é igual a {celsius}°C e {kelvin}K")
+    
+    elif opcao == 3:  # Kelvin
+        celsius = kelvin_to_celsius(temperatura)
+        fahrenheit = kelvin_to_fahrenheit(temperatura)
+        print(f"{temperatura}K é igual a {celsius}°C e {fahrenheit}°F")
+    
+    else:
+        print("Opção inválida. Por favor, escolha 1, 2 ou 3.")
+
+# Executa o conversor
+converter_temperatura()
+
+Como funciona o código:
+
+    Funções de conversão: São definidas funções para converter entre as três escalas de temperatura.
+    Entrada do usuário: O programa pede ao usuário para escolher a unidade de entrada e a temperatura a ser convertida.
+    Cálculo e saída: Dependendo da opção escolhida, o programa converte e exibe os resultados nas outras duas escalas.
+
+Como executar:
+
+Para usar o código, você pode copiá-lo e colá-lo em um ambiente Python (como um IDE ou um Jupyter Notebook) e executá-lo. Ele irá solicitar que você insira a temperatura e a unidade, em seguida, mostrará as conversões correspondentes.
+O resultado está ótimo, mas eu preciso de um código que cada unidade de medida esteja separada em seus próprios blocos de código e que, nestes mesmos blocos, o usuário possa inserir os números a serem convertidos, por meio de um comando input
+ChatGPT
+
+Claro! Aqui está uma versão do conversor de temperatura onde cada unidade de medida está separada em seus próprios blocos de código, permitindo que o usuário insira os números diretamente em cada bloco:
+
+python
+
+def celsius_to_fahrenheit(c):
+    return (c * 9/5) + 32
+
+def celsius_to_kelvin(c):
+    return c + 273.15
+
+def fahrenheit_to_celsius(f):
+    return (f - 32) * 5/9
+
+def fahrenheit_to_kelvin(f):
+    return (f - 32) * 5/9 + 273.15
+
+def kelvin_to_celsius(k):
+    return k - 273.15
+
+def kelvin_to_fahrenheit(k):
+    return (k - 273.15) * 9/5 + 32
+
+# Bloco para Celsius
+def converter_celsius():
+    celsius = float(input("Digite a temperatura em Celsius: "))
+    fahrenheit = celsius_to_fahrenheit(celsius)
+    kelvin = celsius_to_kelvin(celsius)
+    print(f"{celsius}°C é igual a {fahrenheit}°F e {kelvin}K")
+
+# Bloco para Fahrenheit
+def converter_fahrenheit():
+    fahrenheit = float(input("Digite a temperatura em Fahrenheit: "))
+    celsius = fahrenheit_to_celsius(fahrenheit)
+    kelvin = fahrenheit_to_kelvin(fahrenheit)
+    print(f"{fahrenheit}°F é igual a {celsius}°C e {kelvin}K")
+
+# Bloco para Kelvin
+def converter_kelvin():
+    kelvin = float(input("Digite a temperatura em Kelvin: "))
+    celsius = kelvin_to_celsius(kelvin)
+    fahrenheit = kelvin_to_fahrenheit(kelvin)
+    print(f"{kelvin}K é igual a {celsius}°C e {fahrenheit}°F")
+
+# Menu principal
+def menu():
+    print("Conversor de Temperatura")
+    print("Escolha a unidade da temperatura que você deseja converter:")
+    print("1. Celsius")
+    print("2. Fahrenheit")
+    print("3. Kelvin")
+    
+    opcao = int(input("Digite o número da opção (1/2/3): "))
+    
+    if opcao == 1:
+        converter_celsius()
+    elif opcao == 2:
+        converter_fahrenheit()
+    elif opcao == 3:
+        converter_kelvin()
+    else:
+        print("Opção inválida. Por favor, escolha 1, 2 ou 3.")
+
+# Executa o menu
+menu()
+
+Como funciona o código:
+
+    Funções de conversão: Mantemos as funções de conversão para cada par de unidades.
+    Funções específicas: Cada unidade (Celsius, Fahrenheit, Kelvin) tem sua própria função que solicita a temperatura ao usuário e exibe os resultados.
+    Menu principal: Um menu permite ao usuário escolher qual unidade deseja converter, chamando a função correspondente.
+
+Execução:
+
+Copie e cole este código em um ambiente Python e execute-o. Você poderá inserir as temperaturas em diferentes unidades e obter as conversões desejadas.

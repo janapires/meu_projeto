@@ -1,0 +1,6 @@
+# Programa para calcular o quarado de um número
+
+x = int(input("Digite um número: "))
+operacao = x * x
+
+print(f"O resultado da operação é: {operacao}")

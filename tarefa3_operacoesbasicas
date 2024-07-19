@@ -1,0 +1,14 @@
+# Programa para realização das quatro operções bádicas matemáticas
+
+x = int(input("Digite o primeiro número: "))
+y = int(input("Digite o segundo número: "))
+
+soma = x + y
+subtracao = x - y
+multiplicacao = x * y
+divisao = x / y
+
+print("A soma é: ", soma)
+print("A soma é: ", subtracao)
+print("A soma é: ", multiplicacao)
+print("A soma é: ", divisao)
