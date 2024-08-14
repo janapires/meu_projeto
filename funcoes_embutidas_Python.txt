@@ -1,0 +1,145 @@
+Python possui um conjunto de funções embutidas (ou built-in) que são integradas à linguagem e disponíveis para uso em qualquer momento, sem a necessidade de importar módulos adicionais. Abaixo está uma lista das principais funções embutidas em Python, junto com uma breve descrição de suas atribuições:
+
+1. **`abs(x)`**: Retorna o valor absoluto de um número.
+
+2. **`all(iterable)`**: Retorna `True` se todos os elementos do iterável forem verdadeiros (ou se o iterável estiver vazio).
+
+3. **`any(iterable)`**: Retorna `True` se algum dos elementos do iterável for verdadeiro. Retorna `False` se o iterável estiver vazio.
+
+4. **`ascii(object)`**: Retorna uma representação em string do objeto, com caracteres não-ASCII escapados.
+
+5. **`bin(x)`**: Converte um número inteiro para uma string que representa o número em base binária.
+
+6. **`bool([x])`**: Converte um valor para `True` ou `False`, dependendo da sua verdade.
+
+7. **`breakpoint()`**: Insere um ponto de interrupção para depuração. Em Python 3.7 e versões posteriores, pode ser configurado para usar o depurador incorporado.
+
+8. **`bytearray([source[, encoding[, errors]]])`**: Cria um novo array de bytes.
+
+9. **`bytes([source[, encoding[, errors]]])`**: Cria um novo objeto bytes (imutável).
+
+10. **`callable(object)`**: Verifica se o objeto pode ser chamado (se é uma função, método ou objeto com o método `__call__`).
+
+11. **`chr(i)`**: Converte um número inteiro (representando um código Unicode) em um caractere.
+
+12. **`classmethod(function)`**: Cria um método de classe a partir de uma função.
+
+13. **`compile(source, filename, mode, flags=0, dont_inherit=False)`**: Compila o código fonte em um objeto de código que pode ser executado pelo interpretador Python.
+
+14. **`complex([real[, imag]])`**: Cria um número complexo.
+
+15. **`delattr(object, name)`**: Remove um atributo de um objeto.
+
+16. **`dict([mapping or iterable])`**: Cria um novo dicionário.
+
+17. **`dir([object])`**: Retorna uma lista de atributos e métodos do objeto.
+
+18. **`divmod(a, b)`**: Retorna uma tupla contendo o quociente e o resto da divisão de `a` por `b`.
+
+19. **`enumerate(iterable, start=0)`**: Adiciona um contador aos elementos de um iterável e retorna um objeto enumerado.
+
+20. **`eval(expression[, globals[, locals]])`**: Avalia uma expressão como uma string e retorna o resultado.
+
+21. **`exec(object[, globals[, locals]])`**: Executa código Python dinamicamente a partir de uma string ou objeto de código.
+
+22. **`exit([status])`**: Encerra o processo atual, opcionalmente retornando um status.
+
+23. **`filter(function, iterable)`**: Filtra elementos de um iterável com base na função fornecida.
+
+24. **`float([x])`**: Converte um número ou string para um número de ponto flutuante.
+
+25. **`format(value[, format_spec])`**: Formata um valor com base em uma especificação de formato.
+
+26. **`frozenset([iterable])`**: Cria um novo conjunto imutável.
+
+27. **`getattr(object, name[, default])`**: Retorna o valor de um atributo do objeto, ou um valor padrão se o atributo não existir.
+
+28. **`globals()`**: Retorna um dicionário representando a tabela de símbolos globais.
+
+29. **`hasattr(object, name)`**: Verifica se um objeto possui um atributo com um nome específico.
+
+30. **`hash(object)`**: Retorna o valor de hash de um objeto.
+
+31. **`help([object])`**: Invoca o sistema de ajuda interativo.
+
+32. **`hex(x)`**: Converte um número inteiro para uma string que representa o número em base hexadecimal.
+
+33. **`id(object)`**: Retorna o identificador único de um objeto.
+
+34. **`input([prompt])`**: Lê uma linha da entrada padrão e retorna como uma string.
+
+35. **`int([x[, base]])`**: Converte um número ou string para um número inteiro, com base opcional.
+
+36. **`isinstance(object, classinfo)`**: Verifica se o objeto é uma instância da classe ou de uma tupla de classes fornecidas.
+
+37. **`issubclass(class, classinfo)`**: Verifica se a classe é uma subclasse de outra classe ou de uma tupla de classes fornecidas.
+
+38. **`iter(object[, sentinel])`**: Retorna um iterador para o objeto. Se um valor de `sentinel` for fornecido, cria um iterador que chama o objeto até o valor de `sentinel` ser retornado.
+
+39. **`len(s)`**: Retorna o número de itens em um objeto.
+
+40. **`list([iterable])`**: Cria uma nova lista.
+
+41. **`locals()`**: Retorna um dicionário representando a tabela de símbolos locais.
+
+42. **`map(function, iterable, ...)`**: Aplica uma função a cada item de um ou mais iteráveis e retorna um iterador.
+
+43. **`max(iterable, *[, key, default])`**: Retorna o maior item de um iterável ou o maior de dois ou mais argumentos.
+
+44. **`memoryview(obj)`**: Retorna um objeto memoryview que permite acessar o buffer de um objeto.
+
+45. **`min(iterable, *[, key, default])`**: Retorna o menor item de um iterável ou o menor de dois ou mais argumentos.
+
+46. **`next(iterator[, default])`**: Retorna o próximo item de um iterador ou um valor padrão se o iterador estiver esgotado.
+
+47. **`object([...])`**: Cria um novo objeto genérico. Usado como base para a criação de novas classes.
+
+48. **`oct(x)`**: Converte um número inteiro para uma string que representa o número em base octal.
+
+49. **`open(file, mode='r', buffering=-1, encoding=None, errors=None, newline=None, closefd=True, opener=None)`**: Abre um arquivo e retorna um objeto de arquivo.
+
+50. **`ord(c)`**: Converte um caractere para seu código Unicode.
+
+51. **`pow(base, exp[, mod])`**: Calcula a potência de `base` elevada a `exp`, e opcionalmente pode calcular o módulo `mod`.
+
+52. **`print(*objects, sep=' ', end='\n', file=sys.stdout, flush=False)`**: Imprime objetos na saída padrão.
+
+53. **`property(fget=None, fset=None, fdel=None, doc=None)`**: Cria uma propriedade para um atributo de uma classe.
+
+54. **`quit([status])`**: Encerra o processo atual, opcionalmente retornando um status.
+
+55. **`range(stop)`**: Retorna um iterável que gera números no intervalo especificado.
+
+56. **`repr(object)`**: Retorna uma string que representa o objeto de forma que possa ser lida pelo interpretador Python.
+
+57. **`reversed(seq)`**: Retorna um iterador que acessa os elementos de uma sequência na ordem inversa.
+
+58. **`round(number[, ndigits])`**: Arredonda um número para um número especificado de casas decimais.
+
+59. **`set([iterable])`**: Cria um novo conjunto.
+
+60. **`setattr(object, name, value)`**: Define o valor de um atributo de um objeto.
+
+61. **`slice(stop)`**: Cria um objeto de fatia.
+
+62. **`sorted(iterable, *, key=None, reverse=False)`**: Retorna uma lista dos itens do iterável classificados.
+
+63. **`staticmethod(function)`**: Cria um método estático a partir de uma função.
+
+64. **`str(object='')`**: Converte um objeto para uma string.
+
+65. **`sum(iterable, /, start=0)`**: Retorna a soma dos itens de um iterável, começando com um valor inicial opcional.
+
+66. **`super([type[, object]])`**: Retorna um objeto proxy para chamar métodos de uma classe base.
+
+67. **`tuple([iterable])`**: Cria uma nova tupla.
+
+68. **`type(object)`**: Retorna o tipo do objeto.
+
+69. **`vars([object])`**: Retorna o __dict__ de um objeto, ou um dicionário local se nenhum objeto for fornecido.
+
+70. **`zip(*iterables)`**: Retorna um iterador de tuplas, onde a i-ésima tupla contém o i-ésimo elemento de cada iterável.
+
+71. **`__import__(name, globals=None, locals=None, fromlist=(), level=0)`**: Função interna usada para importar módulos.
+
+72. **`bool([x])`**: Retorna `True` ou `False
