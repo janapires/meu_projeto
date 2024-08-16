@@ -5,14 +5,16 @@
 numeros = [7, 2, 9, 6, 5, 0, 3, 8, 1, 4]
 palavras = ["Olá", "Alô", "Hei", "Uau", "Ops"]
 
+# Definindo as instruções da lista...
+
 print("Quantas variáveis possuem: ")
-print("Números: ", len(numeros))
-print("Palavras: ", len(palavras))
+print("Números: ", len(numeros)) # Exibe a quantidade de variáveis dentro de uma determinada lista/objeto...
+print("Palavras: ", len(palavras)) # Exibe a quantidade de variáveis dentro de uma determinada lista/objeto...
 
 print("Vamos reordenar essas listas?")
-print(sorted(numeros))
-print(sorted(palavras))
+print(sorted(numeros)) # Ordena os itens de uma lista/objeto em tamanho crescente, sem alterá-los
+print(sorted(palavras)) # Ordena os itens de uma lista/objeto em tamanho crescente, sem alterá-los
 
-print("O somatório de números é: ", sum(numeros))
-print("Qual é o maior valor dentre os números? ", max(numeros))
-print("Qual é a primeira palavra da lista? ", min(palavras))
+print("O somatório de números é: ", sum(numeros)) # Informa o valor da soma de todos os itens existentes, caso seja uma lista numérica...
+print("Qual é o maior valor dentre os números? ", max(numeros)) # Exibe o valor máximo de uma variável, caso seja numérica...
+print("Qual é a primeira palavra da lista? ", min(palavras)) # Neste caso, informou a primeira paralva na ordem alfabética...

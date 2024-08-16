@@ -23,4 +23,5 @@ original.append("linguiça")
 # Exibindo a lista com as suas alterações
 
 print("Amiguinho, me mostre o que você vai comer!")
-print("Claro, dá uma conferida: ", derivada) # A lista derivada assumiu o mesmo espaço na memória da lista original e exibiu os itens que foram modificados
+print("Claro, dá uma conferida: ", derivada) # A lista derivada assumiu o mesmo espaço na memória da lista original 
+# e exibiu os itens que foram modificados
