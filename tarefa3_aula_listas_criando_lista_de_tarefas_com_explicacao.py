@@ -13,7 +13,7 @@ def adicionarTarefa(tarefas):
     tarefa = input("Digite a nova tarefa: ")
     tarefas.append(tarefa)
     print(f"Tarefa '{tarefa}' adicionada com sucesso!")
-    mostrarTarefas(tarefas)  # Exibe a lista atualizada após adicionar a nova tarefa
+    mostrarTarefas(tarefas)  # Exibe a lista atualizada após adicionar a nova tarefa...
 
 # Permitindo que o uswuário remova da lista uma tarefa já concluída... 
 
